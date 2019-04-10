@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+@import "variables";
+
+@keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    height:100%;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+body {
+    margin: 0;
+    height:100%;
+    background-color:$body-bg;
+}
+
+[tabindex="-1"]:focus {
+    outline: 0 !important;
+}
+
+.pull-left{float:left;}
+.pull-right{float:right;}
+.text{text-decoration:none;}
+
+@import "header";
